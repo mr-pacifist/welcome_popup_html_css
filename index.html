@@ -3,128 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Card</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-
-
-        .popup-card {
-            display: flex;
-            flex-direction: row;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 800px;
-            width: 100%;
-            margin: 10px;
-        }
-        /*  product image */
-        .popup-card-img {
-            width: 43%;
-            background-color: #b8ffbe;
-        }
-        .popup-card-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /*  product content and input */
-        .popup-card-content {
-            background-color: #F4F9F4;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;
-            width: 57%;
-            
-        }
-        .popup-card-content span {
-            font-size: clamp(10px, 4vw, 20px);
-            color: #303030;
-        }
-        .popup-card-content h1 {
-            font-size: clamp(16px, 10vw, 64px);
-            color: #ff9900;
-            margin: 0;
-        }
-        .popup-card-content p {
-            font-size: clamp(14px, 5vw, 32px);
-            margin: 0;
-            font-weight: bold;
-        }
-        .popup-card-content form {
-            width: 100%;
-            margin: 15px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            justify-content: center;
-            box-sizing: border-box;
-        }
-       
-        .popup-card-content input {
-            width: clamp(95%, 3vw, 100%);
-            padding: 10px 8px;
-            margin-bottom: 10px;
-            border: 1px solid #303030;
-            border-radius: 5px;
-            font-size: clamp(10px, 4vw, 16px);
-        }
-    
-        .popup-card-content button {
-            width: 100%;
-            padding: 10px 0px;
-            font-size: clamp(10px, 3vw, 16px);
-            background-color: #F59C16;
-            border-radius: 20px;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .popup-card-content a {
-            display: block;
-            margin-top: 10px;
-            font-size: clamp(10px, 3vw, 14px);
-            color: #303030;
-            text-decoration: none;
-        }
-
-        @media screen and (max-width: 450px) {
-            .popup-card-content form {
-            margin: 8px 0;
-            }
-            .popup-card-content{
-                padding: 15px;
-            }
-            .popup-card-content input {
-                width: clamp(95%, 3vw, 95%);
-                padding: 8px 5px;  
-            }  
-        }
-    </style>
+    <title>Welcome pop-up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="popup-card">
-        <!-- Card Image -->
+        <!--Pop-up Card Image -->
         <div class="popup-card-img">
             <img src="product.jpg" alt="Product Image">
         </div>
 
-        <!-- Card Content -->
+        <!-- Pop-up Card Content -->
         <div class="popup-card-content">
+            <div class="content-bg">
+            </div>
+            <div class="popup-component">
             <span>CLAIM</span>  
             <h1>$20 OFF</h1>
             <p>Your First Order!</p>
@@ -133,6 +26,7 @@
                 <button type="submit">CLAIM $20 OFF</button>
             </form>
             <a href="#">I'll pass on this one</a>
+            </div> 
         </div>
     </div>
 </body>
