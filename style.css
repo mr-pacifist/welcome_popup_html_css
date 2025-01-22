@@ -49,7 +49,7 @@ body {
 .content-bg{
     position: absolute;
     background-image: url('popup-card-bg.jpg');
-    background: no-repeat  cover;
+    background: no-repeat  cover right;
     width: 100%;
     max-width: 500px; 
     height: 100%;
